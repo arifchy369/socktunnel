@@ -9,7 +9,8 @@ config = json.load(open("config.json"))
 
 TUNNEL_TOKEN = config.get("token")
 LOCAL_HOST = config.get("host")
-TUNNEL_SERVER = f"wss://{config.get("tunnel")}/c97ad31f9fc13ff4e6bd022e74dd561ce93cf67e624dc061d461c1226e70"
+TUNNEL_DOMAIN = config.get("tunnel")
+TUNNEL_SERVER = f"wss://{TUNNEL_DOMAIN}/c97ad31f9fc13ff4e6bd022e74dd561ce93cf67e624dc061d461c1226e70"
 
 pending_requests = {}
 ws_sessions = {}
