@@ -1,0 +1,16 @@
+{
+  "name": "socktunnel",
+  "version": "1.0.0",
+  "description": "A reverse WebSocket-based tunnel for proxying HTTP and WebSocket traffic securely.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["tunnel", "websocket", "http-proxy", "reverse-proxy", "ws"],
+  "author": "Arif Chowdhury",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^9.0.1",
+    "ws": "^8.15.1"
+  }
+}

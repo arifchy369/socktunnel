@@ -1,0 +1,5 @@
+{
+    "host":"http://localhost:xxxx",
+    "tunnel":"yourdomain.com",
+    "token":"YOUR_AUTH_TOKEN"
+}
