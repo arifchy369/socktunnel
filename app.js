@@ -217,5 +217,5 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 server.listen(PORT, () => {
-  console.log("🚀 Tunnel server running on port 8080");
+  console.log("🚀 Tunnel server running");
 });
