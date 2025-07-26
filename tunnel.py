@@ -106,7 +106,7 @@ async def handle_http_request(ws, meta, body):
             k: v for k, v in meta.get("headers", {}).items()
             if k.lower() not in ['host', 'content-length', 'transfer-encoding']
         }
-        async with aiohttp.request(meta["method"], url, headers=headers, data=body) as resp:
+        async with aiohttp.request(meta["method"], url, headers=headers, data=body, allow_redirects=False) as resp:
             raw_headers = {}
             for key, value in resp.headers.items():
                 if key.lower() == 'set-cookie':
